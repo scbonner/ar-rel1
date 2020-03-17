@@ -1,10 +1,20 @@
-<form action="/show_user" method="post">
-    <p>Users:</p>
-    <% @users.each do |u| %>
-      <p><%= u.name %></p>
-    <% end %>
-    <br>
-    <label for= "username">User name:</label>
-    <input type= "text" name="name" id="username">
-    <input type= "submit" value= "show">
+<form action= '/create' method="post">
+  <p>Name of user to create</p>
+  <inpt type='text' name='name'>
+    <p>Email address</p>
+  <input type='text' name='email'>
+  <input type='submit' value='add'>
 </form>
+
+
+
+
+
+<!--<form action="/show_user" method="post">-->
+<!--    <p>Users:</p>-->
+    <!--
+<!--    <br>-->
+<!--    <label for= "username">User name:</label>-->
+<!--    <input type= "text" name="name" id="username">-->
+<!--    <input type= "submit" value= "show">-->
+<!--</form>-->
