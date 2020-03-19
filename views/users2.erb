@@ -1,4 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+
 <% @users.each do |u| %>
   <% @link = "/user/#{u.id}" %>
   <p><%= u.name %> <a href="<%= @link %>">Show</a></p>
 <% end %>
+  </body>
+</html>

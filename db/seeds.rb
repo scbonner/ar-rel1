@@ -64,8 +64,9 @@ ua = User.all
 ua.each do |u|
   puts u.name + '|' + u.email + '|' + u.team.name
 end
+
 puts
-puts 'The teams are'
+puts 'The teams are:'
 ta = Team.all
 ta.each do |t|
   puts t.name + '|' + t.notes
